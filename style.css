@@ -885,92 +885,92 @@ footer a:hover {
     body {
         font-size: 16px;
     }
-    
+
     .container {
         padding: 15px;
     }
-    
+
     h1 {
         font-size: 22px;
     }
-    
+
     .profile-avatar-placeholder {
         width: 120px;
         height: 120px;
         font-size: 48px;
     }
-    
+
     .profile-name {
         font-size: 26px;
     }
-    
+
     .profile-stats {
         gap: 25px;
     }
-    
+
     .stat-number {
         font-size: 24px;
     }
-    
+
     .btn-high-conversion {
         padding: 15px 30px;
         font-size: 16px;
         width: 100%;
     }
-    
+
     .story-content {
         padding: 25px 20px;
     }
-    
+
     .story-content p {
         font-size: 16px;
     }
-    
+
     .highlight {
         font-size: 18px;
         padding: 20px;
     }
-    
+
     .navigation {
         flex-direction: column;
     }
-    
+
     .ad-large, .ad-small {
         padding: 20px;
     }
-    
+
     .whatsapp-float {
         bottom: 20px;
         right: 20px;
     }
-    
+
     .whatsapp-btn {
         width: 55px;
         height: 55px;
         font-size: 28px;
     }
-    
+
     .whatsapp-popup {
         width: 280px;
         right: -10px;
     }
-    
+
     .notification-container {
         left: 15px;
         bottom: 90px;
     }
-    
+
     .notification {
         max-width: 250px;
         padding: 12px 15px;
     }
-    
+
     .comment-text,
     .comment-actions {
         margin-left: 0;
         margin-top: 10px;
     }
-    
+
     .categories-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -981,11 +981,11 @@ footer a:hover {
         flex-wrap: wrap;
         gap: 20px;
     }
-    
+
     .stat-item {
         flex: 1 1 40%;
     }
-    
+
     .categories-grid {
         grid-template-columns: 1fr;
     }

@@ -23,12 +23,12 @@
 
         <!-- Seção do Perfil -->
         <section class="profile-section">
-            <img src="img/vanessa.webp" alt="Foto de perfil da Vanessa">
+            <img src="img/vanessa.webp" alt="Vanessa" class="profile-avatar">
             <h1 class="profile-name">Vanessa, 28 anos</h1>
             <p class="profile-bio">Oi amor! 💋 Sou a Vanessa e adoro compartilhar minhas histórias mais íntimas. Aqui você vai encontrar contos reais que aconteceram comigo... alguns vão te surpreender! 🔥</p>
-            
+
             <div class="online-badge" style="margin-top: 15px;">● ONLINE AGORA</div>
-            
+
             <div class="profile-stats">
                 <div class="stat-item">
                     <span class="stat-number" id="viewsCount">127.843</span>
@@ -59,7 +59,7 @@
 
         <!-- Container das Histórias (inicialmente oculto) -->
         <div id="storiesContainer" class="hidden">
-            
+
             <!-- Widget Pequeno após revelar -->
             <div class="ad-section ad-small">
                 <div class="ad-label">📢 LEIA TAMBÉM:</div>
@@ -219,7 +219,7 @@
         <button class="whatsapp-btn" onclick="toggleWhatsApp()">💬</button>
         <div class="whatsapp-popup" id="whatsappPopup">
             <div class="whatsapp-popup-header">
-                <div class="whatsapp-popup-avatar">👩</div>
+                <img src="img/vanessa.webp" alt="Vanessa" class="whatsapp-popup-avatar-img">
                 <div class="whatsapp-popup-info">
                     <h4>Vanessa</h4>
                     <p>Online agora</p>
@@ -246,7 +246,7 @@
         function revealStories() {
             document.getElementById('storiesContainer').classList.remove('hidden');
             document.getElementById('revealBtn').style.display = 'none';
-            
+
             // Scroll suave para as histórias
             document.getElementById('storiesContainer').scrollIntoView({
                 behavior: 'smooth',
@@ -268,7 +268,7 @@
         function updateViewsCounter() {
             const viewsElement = document.getElementById('viewsCount');
             let currentViews = parseInt(viewsElement.textContent.replace(/\./g, ''));
-            
+
             setInterval(() => {
                 currentViews += Math.floor(Math.random() * 5) + 1;
                 viewsElement.textContent = currentViews.toLocaleString('pt-BR');
@@ -290,16 +290,16 @@
         function showNotification() {
             const container = document.getElementById('notificationContainer');
             const randomNotif = notifications[Math.floor(Math.random() * notifications.length)];
-            
+
             const notif = document.createElement('div');
             notif.className = 'notification';
             notif.innerHTML = `
                 <span class="notification-icon">${randomNotif.icon}</span>
                 <span class="notification-text">${randomNotif.text}</span>
             `;
-            
+
             container.appendChild(notif);
-            
+
             // Remove após 5 segundos
             setTimeout(() => {
                 notif.remove();
@@ -317,11 +317,11 @@
         // Inicialização
         document.addEventListener('DOMContentLoaded', () => {
             updateViewsCounter();
-            
+
             // Mostrar notificações periodicamente
             setTimeout(() => showNotification(), 5000);
             setInterval(() => showNotification(), 15000);
-            
+
             // Atualizar barra de progresso
             window.addEventListener('scroll', updateProgressBar);
         });
