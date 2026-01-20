@@ -691,6 +691,15 @@ h2 {
     font-size: 24px;
 }
 
+.whatsapp-popup-avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    flex-shrink: 0;
+}
+
 .whatsapp-popup-info h4 {
     color: white;
     font-size: 16px;
