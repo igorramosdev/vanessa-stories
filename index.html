@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa's Stories - Contos Íntimos e Secretos</title>
+    <meta name="description" content="Histórias íntimas e secretas de Vanessa. Contos adultos exclusivos que vão despertar sua imaginação.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://jsc.mgid.com/site/1035804.js" async></script>
+</head>
+<body>
+    <!-- Barra de Progresso -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo">Vanessa's Stories</div>
+            <div class="online-badge">● ONLINE AGORA</div>
+        </header>
+
+        <!-- Seção do Perfil -->
+        <section class="profile-section">
+            <img src="img/vanessa.webp" alt="Foto de perfil da Vanessa">
+            <h1 class="profile-name">Vanessa, 28 anos</h1>
+            <p class="profile-bio">Oi amor! 💋 Sou a Vanessa e adoro compartilhar minhas histórias mais íntimas. Aqui você vai encontrar contos reais que aconteceram comigo... alguns vão te surpreender! 🔥</p>
+            
+            <div class="online-badge" style="margin-top: 15px;">● ONLINE AGORA</div>
+            
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="viewsCount">127.843</span>
+                    <span class="stat-label">Visualizações</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Histórias</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9 ⭐</span>
+                    <span class="stat-label">Avaliação</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagem Pessoal -->
+        <div class="personal-message">
+            Ei você! 😏 Que bom que chegou até aqui. Vou te contar um segredo: essas histórias são reais e aconteceram comigo. Algumas eu nunca contei pra ninguém... até agora. Clica no botão abaixo pra ver tudo! 💕
+        </div>
+
+        <!-- Botão de Revelar -->
+        <div class="text-center mb-40">
+            <button class="btn-high-conversion" id="revealBtn" onclick="revealStories()">
+                🔥 QUERO LER SUAS HISTÓRIAS 🔥
+            </button>
+        </div>
+
+        <!-- Container das Histórias (inicialmente oculto) -->
+        <div id="storiesContainer" class="hidden">
+            
+            <!-- Widget Pequeno após revelar -->
+            <div class="ad-section ad-small">
+                <div class="ad-label">📢 LEIA TAMBÉM:</div>
+                <div class="widget-container">
+                    <div data-type="_mgwidget" data-widget-id="1912228"></div>
+                    <script>
+                        (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
+                    </script>
+                </div>
+                <p class="ad-disclaimer">Conteúdo Patrocinado</p>
+            </div>
+
+            <h2>📖 Minhas Histórias Secretas</h2>
+
+            <!-- Grid de Histórias -->
+            <div class="stories-grid">
+                <!-- Conto 1 -->
+                <a href="conto-1.html" class="story-card">
+                    <div class="story-card-title">🏠 O Dia que Meu Vizinho Me Viu Sozinha</div>
+                    <p class="story-card-excerpt">Era uma tarde quente de verão. Eu estava na varanda do meu apartamento, usando apenas um biquíni, quando percebi que não estava sozinha...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 18.432 leituras</span>
+                        <span class="story-card-category">🔥 Quente</span>
+                    </div>
+                </a>
+
+                <!-- Conto 2 -->
+                <a href="conto-2.html" class="story-card">
+                    <div class="story-card-title">🏢 O Que Aconteceu no Elevador do Trabalho</div>
+                    <p class="story-card-excerpt">O elevador parou entre os andares. Ficamos presos no escuro por quase uma hora. O que aconteceu ali dentro mudou tudo...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 22.187 leituras</span>
+                        <span class="story-card-category">💼 Trabalho</span>
+                    </div>
+                </a>
+
+                <!-- Conto 3 -->
+                <a href="conto-3.html" class="story-card">
+                    <div class="story-card-title">🏊 A Verdade Sobre a Festa na Piscina</div>
+                    <p class="story-card-excerpt">A festa da minha amiga estava cheia. Mas foi o irmão dela que chamou minha atenção. O que aconteceu depois que todos foram embora...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 19.654 leituras</span>
+                        <span class="story-card-category">🎉 Festa</span>
+                    </div>
+                </a>
+
+                <!-- Conto 4 -->
+                <a href="conto-4.html" class="story-card">
+                    <div class="story-card-title">🧘 O Professor de Yoga que Me Ensinou Mais</div>
+                    <p class="story-card-excerpt">Eu só queria melhorar minha flexibilidade. Mas aquela aula particular se transformou em algo que eu nunca imaginei...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 25.891 leituras</span>
+                        <span class="story-card-category">💪 Fitness</span>
+                    </div>
+                </a>
+
+                <!-- Conto 5 -->
+                <a href="conto-5.html" class="story-card">
+                    <div class="story-card-title">🚕 O Taxista que Me Levou Além do Destino</div>
+                    <p class="story-card-excerpt">Era tarde da noite, eu estava voltando de uma festa. Pedi um táxi e o motorista era diferente de todos que já conheci...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 21.234 leituras</span>
+                        <span class="story-card-category">🌙 Noturno</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Widget Grande após 5º conto -->
+            <div class="ad-section ad-large">
+                <div class="ad-label">🔥 RECOMENDADO PARA VOCÊ:</div>
+                <div class="widget-container">
+                    <div data-type="_mgwidget" data-widget-id="1846945"></div>
+                    <script>
+                        (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
+                    </script>
+                </div>
+                <p class="ad-disclaimer">Conteúdo Patrocinado</p>
+            </div>
+
+            <!-- Mais Histórias -->
+            <div class="stories-grid">
+                <!-- Conto 6 -->
+                <a href="conto-6.html" class="story-card">
+                    <div class="story-card-title">🏖️ O Caso do Guarda-Sol na Praia</div>
+                    <p class="story-card-excerpt">Verão, praia lotada, e um toque acidental que mudou meu dia completamente. A química foi instantânea...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 17.892 leituras</span>
+                        <span class="story-card-category">☀️ Verão</span>
+                    </div>
+                </a>
+
+                <!-- Conto 7 -->
+                <a href="conto-7.html" class="story-card">
+                    <div class="story-card-title">🎮 O Gamer que Virou Algo Mais</div>
+                    <p class="story-card-excerpt">Conheci ele jogando online. Meses de conversa até que decidimos nos encontrar pessoalmente. A surpresa foi maior do que imaginei...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 23.456 leituras</span>
+                        <span class="story-card-category">💻 Online</span>
+                    </div>
+                </a>
+
+                <!-- Conto 8 -->
+                <a href="conto-8.html" class="story-card">
+                    <div class="story-card-title">💑 O Encontro às Cegas que Deu Certo</div>
+                    <p class="story-card-excerpt">Minha amiga insistiu tanto que acabei aceitando. O restaurante, a química instantânea, e uma noite que nunca vou esquecer...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 20.123 leituras</span>
+                        <span class="story-card-category">❤️ Romance</span>
+                    </div>
+                </a>
+
+                <!-- Conto 9 -->
+                <a href="conto-9.html" class="story-card">
+                    <div class="story-card-title">👔 O Chefe que me Chamou para Trabalhar Fim de Semana</div>
+                    <p class="story-card-excerpt">Escritório vazio, urgência falsa, e uma tensão que eu sentia há meses. Aquele sábado mudou nossa relação profissional...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 26.789 leituras</span>
+                        <span class="story-card-category">💼 Trabalho</span>
+                    </div>
+                </a>
+
+                <!-- Conto 10 -->
+                <a href="conto-10.html" class="story-card">
+                    <div class="story-card-title">💪 O Personal Trainer que Me Treinou à Noite</div>
+                    <p class="story-card-excerpt">Academia vazia, treino noturno, e uma intensidade que foi além dos exercícios. Ele me ensinou muito mais que musculação...</p>
+                    <div class="story-card-meta">
+                        <span class="story-card-views">👁️ 24.567 leituras</span>
+                        <span class="story-card-category">💪 Fitness</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Call-to-action final -->
+            <div class="text-center mt-40">
+                <a href="todos-contos.html" class="btn-high-conversion">
+                    📚 VER TODAS AS HISTÓRIAS
+                </a>
+                <br><br>
+                <a href="categorias.html" class="btn-secondary">
+                    🏷️ Explorar por Categorias
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Vanessa's Stories - Todos os direitos reservados</p>
+            <p>
+                <a href="todos-contos.html">Todos os Contos</a> | 
+                <a href="categorias.html">Categorias</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- WhatsApp Flutuante -->
+    <div class="whatsapp-float">
+        <button class="whatsapp-btn" onclick="toggleWhatsApp()">💬</button>
+        <div class="whatsapp-popup" id="whatsappPopup">
+            <div class="whatsapp-popup-header">
+                <div class="whatsapp-popup-avatar">👩</div>
+                <div class="whatsapp-popup-info">
+                    <h4>Vanessa</h4>
+                    <p>Online agora</p>
+                </div>
+            </div>
+            <div class="whatsapp-popup-body">
+                <div class="whatsapp-popup-message">
+                    Oi amor! 💕 Quer receber minhas histórias novas em primeira mão? Me manda um oi!
+                </div>
+                <button class="whatsapp-popup-btn" onclick="closeWhatsApp()">Continuar Lendo 📖</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container de Notificações -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script>
+        // ========================================
+        // FUNCIONALIDADES INTERATIVAS
+        // ========================================
+
+        // Revelar histórias
+        function revealStories() {
+            document.getElementById('storiesContainer').classList.remove('hidden');
+            document.getElementById('revealBtn').style.display = 'none';
+            
+            // Scroll suave para as histórias
+            document.getElementById('storiesContainer').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Toggle WhatsApp popup
+        function toggleWhatsApp() {
+            const popup = document.getElementById('whatsappPopup');
+            popup.classList.toggle('active');
+        }
+
+        function closeWhatsApp() {
+            document.getElementById('whatsappPopup').classList.remove('active');
+        }
+
+        // Contador de views fake
+        function updateViewsCounter() {
+            const viewsElement = document.getElementById('viewsCount');
+            let currentViews = parseInt(viewsElement.textContent.replace(/\./g, ''));
+            
+            setInterval(() => {
+                currentViews += Math.floor(Math.random() * 5) + 1;
+                viewsElement.textContent = currentViews.toLocaleString('pt-BR');
+            }, 3000);
+        }
+
+        // Notificações fake
+        const notifications = [
+            { icon: '👁️', text: '<strong>Maria</strong> está lendo "O Vizinho"' },
+            { icon: '❤️', text: '<strong>João</strong> curtiu uma história' },
+            { icon: '🔥', text: '<strong>15 pessoas</strong> online agora' },
+            { icon: '💬', text: '<strong>Carlos</strong> comentou: "Incrível!"' },
+            { icon: '⭐', text: 'Nova avaliação: <strong>5 estrelas</strong>' },
+            { icon: '👀', text: '<strong>Pedro</strong> está lendo "O Elevador"' },
+            { icon: '💕', text: '<strong>Ana</strong> salvou nos favoritos' },
+            { icon: '🔥', text: '<strong>23 pessoas</strong> online agora' },
+        ];
+
+        function showNotification() {
+            const container = document.getElementById('notificationContainer');
+            const randomNotif = notifications[Math.floor(Math.random() * notifications.length)];
+            
+            const notif = document.createElement('div');
+            notif.className = 'notification';
+            notif.innerHTML = `
+                <span class="notification-icon">${randomNotif.icon}</span>
+                <span class="notification-text">${randomNotif.text}</span>
+            `;
+            
+            container.appendChild(notif);
+            
+            // Remove após 5 segundos
+            setTimeout(() => {
+                notif.remove();
+            }, 5000);
+        }
+
+        // Barra de progresso
+        function updateProgressBar() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            updateViewsCounter();
+            
+            // Mostrar notificações periodicamente
+            setTimeout(() => showNotification(), 5000);
+            setInterval(() => showNotification(), 15000);
+            
+            // Atualizar barra de progresso
+            window.addEventListener('scroll', updateProgressBar);
+        });
+    </script>
+</body>
+</html>
